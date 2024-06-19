@@ -1,0 +1,76 @@
+**Power Bi Paginated Reports-**
+
+1)Paginated reports are designed to be printed or shared
+2)They are callled paginated because they are formatted to fit well on page.
+3)They are also callled pixel perfect because you can control there report page layout easily.
+4)Power Bi Report Builder is a tool for authoring paginated reports.
+5)When we see paginated report at top it has parameters to fill data.
+
+**Archtecture-**
+
+
+1)Data connection and Data Sets - Mysql server, Adveture works Databases - Dataase should be strutured Data
+2)PowerBi gateways
+
+**Steps to create a report-**
+
+1)Data source- create a connection string to get Data
+2)Data Sets- to get data from source (structured data)
+3) Create Table - Header and Data (Data is mapped to HEADER) AND only 1 data set is used for 1 table creation.
+4)Finally Run the Paginated Report.
+
+**Paginated reports**-
+
+1)Ability to print data in table
+2)Limited data sources (Structured Data)
+3)No concept of Data Modeling
+4)Modify data by filtering, grouping,sorting.(No concept of DAX)
+5)Format - RDL (Report defination language)
+6)Charts or visuals are not interactive.
+
+**Row groups and column groups-**
+
+First as a parent column then child column.
+
+**Parameters and Filters in PowerBi Paginated Reports-**
+
+Parameters determine the details included in a report and how that information is displayed.
+Filter the data and show in report (can be done in Data set) - select parameter and give expression and value.
+
+**Cascading Parameters**-
+
+1)Cascading parameters provide a way of managing large amounts of data in a Power BI paginated report.
+ 
+2)we can define a set of related parameters so that the list of values for one parameter depends on the value chosen in another parameter.
+3)PowerBi Data set internally is a Tabular Model
+
+**Note-:** Header and Foter Properties
+
+1)It has Header and forter.
+2)It has Hide,sorting property, User need to to sorting - use Interactive sorting.
+3)Table header repeate d at each page - click on entire table, go to advance Mode, click on Row groups , Repeat on New Page option should be True.
+
+**Deployment of Paginated reports in Services**:-
+
+Workspace should be of premium capacity
+
+**Sub Report in Paginated Report in PowerBI**:-
+
+1)A subreport is a paginated report item that displays another paginated report inside the body of a main paginated report.
+2)It's similar to a frame in a web page, allowing you to embed a report within a report.
+3)We have 2 Reports and we have to see the content of 2nd Report in 1st Report that 2nd report will be embeded in your 2nd Report.
+4)We can add Paginated reports in Power Bi Desktop(must have premium memberhip) - we can set parameters and without parameters.
+5)We can share, export the Power Bi paginated report in an organization.(premium subscribtion needed)
+
+**Diffrence in Powerbi Reports and  PowerBI Paginated Reports**-
+
+1)PowerBi Paginated Report- When we do export in excl in powerBi Paginated report data and format both get exported.
+ 
+2)PowerBi Report- When we do export in excl in powerBi Report data get exported not format.It is like screeshot of Report.(Image of Report)
+ 
+**Embeding Paginated Reports**-
+
+1)In powerBi online service -< in file menu-<Embed option- a)Html link ,b) URL Link
+2)Generate Link - Custumize the URL at last to get a particular data.
+ 
+ 
